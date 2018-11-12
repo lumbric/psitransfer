@@ -24,11 +24,13 @@ const config =  {
     "604800": "1 Week",
     "1209600": "2 Weeks",
     "2419200": "4 Weeks",
-    "4838400": "8 Weeks"
+    "4838400": "8 Weeks",
+    "56246400": "3 Months",
+    "112492800": "6 Months"
   },
   // admin password, set to false to disable /admin page
   "adminPass": false,
-  "defaultRetention": 604800,
+  "defaultRetention": 2419200,
   // expire every file after maxAge (eg never downloaded one-time files)
   "maxAge": 3600*24*75, // 75 days
   // maximum file-size for previews in byte
