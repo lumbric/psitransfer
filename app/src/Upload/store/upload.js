@@ -116,8 +116,7 @@ export default {
           resume: true,
           endpoint: "/files/",
           fingerprint: (file) => {
-            // include sid to prevent duplicate file detection on different session
-            return ["tus", state.sid, file.name, file.type, file.size, file.lastModified].join("-");
+            return ["tus", file.name, file.size, file.lastModified].join("-");
           },
           retryDelays: null,
           onError(error) {
